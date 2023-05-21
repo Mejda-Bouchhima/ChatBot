@@ -1,0 +1,144 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "packs",
+      "patterns": [
+        "Which packs do you have?",
+        "how much packs are there?",
+        "Is there packs for participation?"
+      ],
+      "responses": [
+        "There are 3 packs: Visitor, Participant, Challenger",
+        "We have 3 packs: Visitor, Participant, Challenger"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Carte Jeune?",
+        "Can I pay with D17?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept Carte Jeune, D17 and Credit cards",
+        "We accept most major credit cards, and D17"
+      ]
+    },
+    {
+      "tag": "date",
+      "patterns": [
+        "When will the event take place?",
+        "What is the date of the event?",
+        "When do the event starts?"
+      ],
+      "responses": [
+        "The event is on 1,2,3 June",
+        "The event starts on 1 June and lasts 3 days"
+      ]
+    },
+    {
+      "tag": "deadline",
+      "patterns": [
+        "is there a deadline for participation?",
+        "When is the deadline of accepting registrations",
+        "When the registration will close?"
+      ],
+      "responses": [
+        "The deadline of registration is the 27 May.",
+        "On the 27 May the registration will be closed."
+      ]
+    },
+    {
+      "tag": "challenge",
+      "patterns": [
+        "What is the challenge?",
+        "What is the topic of the challenge?",
+        "The challenge is about what?"
+      ],
+      "responses": [
+        "The challenge is about computer vision in industry 4.0",
+        "THe challenge is a hackathon about quality detection using computer vision."
+      ]
+    },
+    {
+      "tag": "activities",
+      "patterns": [
+        "What kind of activities is there?",
+        "How much activities are there is the event?",
+        "Tell me more about the activities of the event?"
+      ],
+      "responses": [
+        "There is job fair, industrial visits, challenges, workshops, parties, and teambuilding activities",
+        "There are more than 4 different activities: job fair, industrial visits, challenges, workshops, and more. "
+      ]
+    },
+    {
+      "tag": "visit",
+      "patterns": [
+        "Where will be the visit?",
+        "the industrial visit will be to which company?",
+        "What is the name of the company that we will visit?"
+      ],
+      "responses": [
+        "Industrial visits will be to companies in Sousse. Leoni is one of them",
+        "We will go to Leoni and other companies. "
+      ]
+    },
+    {
+      "tag": "prize",
+      "patterns": [
+        "How much is the prize?",
+        "Is there prizes for winners?",
+        "What about prizes?"
+      ],
+      "responses": [
+        "The first prize is 1200 DT",
+        "There will be 3 winners. The first prize is 1200 DT "
+      ]
+    },
+    {
+      "tag": "information",
+      "patterns": [
+        "I want to get informations about the event.",
+        "give me informations about the event?",
+        "Can you give me more informations about IASTAM 3.0?"
+      ],
+      "responses": [
+        "Industry Application Society Tunisia Annual Meeting 3.0 is annual meeting organized in its 3thd edition by IEEE IAS ENETCOM student branch chapter. This year theme is the application of computer vision in the industry",
+        "IAS Tunisia Annual Meeting 3.0 is organized by IEEE IAS ENETCOM SBC. It will be about Computer vision in industry 4.0 "
+      ]
+    }
+  ]
+}

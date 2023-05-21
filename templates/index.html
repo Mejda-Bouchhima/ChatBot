@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IASTAM 3.0</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body>
+    <div class="title" >Get To Know us!</div>
+    <div id="chat-container">
+      <div id="chat-history"></div>
+    </div>
+    <form id="chat-form" action="/get_response" method="POST">
+      <div class="container">
+        <input type="text" id="user-input" name="user_input" class="input-field"autofocus />
+        <button type="submit" class = "button">Send</button>
+      </div>
+      
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#chat-form').on('submit', function (e) {
+          e.preventDefault();
+          var userInput = $('#user-input').val();
+          $('#chat-history').prepend('<div class="user-message"><p class="text">' + userInput + '</p><img src="../static/images/user_avatar.jpg" alt="User Avatar" class="img" /></div>');
+          $('#user-input').val('');
+
+          $.ajax({
+            url: '/get_response',
+            type: 'POST',
+            data: { user_input: userInput },
+            success: function (response) {
+              var botResponse = response.response;
+              $('#chat-history').prepend('<div class="bot-message"><img src="../static/images/iastam_avatar.jpg" alt="Bot Avatar" class="img"/><p class="text">' +botResponse + '</p></div>');
+            },
+            
+            dataType: 'json'
+          });
+          
+        });
+      });
+    </script>
+    
+  </body>
+</html>
